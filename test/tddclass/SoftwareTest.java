@@ -15,10 +15,12 @@ public class SoftwareTest {
 	@After
 	public void tearDown() throws Exception {
 	}
-
+// R1: buy one software package
 	@Test
-	public void test() {
-		fail("Not yet implemented");
+	public void testBuyOneSoftwarePackage() {
+		SoftwareSales s = new SoftwareSales();
+		double finalPrice = s.calculatePrice(1);
+		assertEquals(99, finalPrice,0);
 	}
 
 }
