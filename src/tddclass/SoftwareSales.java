@@ -3,28 +3,28 @@ package tddclass;
 public class SoftwareSales {
 	public double calculatePrice(int quantity)
 	{
+		double subTotal = 99 * quantity;
+		double discount = 0.0;
 		if (quantity>= 10 && quantity <=19)
 		{
-			double subTotal = 99 * quantity;
-			double discount = subTotal * 0.20;
-			double finalTotal = subTotal - discount;
-			return finalTotal;
+			
+			discount = subTotal * 0.20;
+			
 		}
 		else if (quantity>=19 && quantity<=49)
 		{
-			double subTotal = 99 * quantity;
-			double discount = subTotal * 0.30;
-			double finalTotal = subTotal - discount;
-			return finalTotal;	
+			
+			 discount = subTotal * 0.30;
+			
 		}
 		else if(quantity>=50 && quantity<=99)
 		{
-			double subTotal = 99 * quantity;
-			double discount = subTotal * 0.40;
-			double finalTotal = subTotal - discount;
-			return finalTotal;	
+			
+			discount = subTotal * 0.40;
+			
 		}
-		return(99.0*quantity);
+		double finalTotal = subTotal - discount;
+		return finalTotal;
 	}
 
 }
