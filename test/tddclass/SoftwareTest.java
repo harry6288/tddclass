@@ -7,9 +7,10 @@ import org.junit.Before;
 import org.junit.Test;
 
 public class SoftwareTest {
-
+SoftwareSales s;
 	@Before
 	public void setUp() throws Exception {
+		s = new SoftwareSales();
 	}
 
 	@After
@@ -35,6 +36,12 @@ public class SoftwareTest {
 			SoftwareSales s = new SoftwareSales();
 			double finalPrice = s.calculatePrice(30);
 			assertEquals(2079,finalPrice,0);
+		}
+		//r4
+		@Test
+		public void testBuy50Packages() {
+			double finalPrice = s.calculatePrice(52);
+			assertEquals(3564,finalPrice,0);
 		}
 	
 
