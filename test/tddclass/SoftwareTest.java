@@ -43,6 +43,13 @@ SoftwareSales s;
 			double finalPrice = s.calculatePrice(60);
 			assertEquals(3564,finalPrice,0);
 		}
+		//r5
+		@Test
+		public void testBuy100Packages() {
+			double finalPrice = s.calculatePrice(120);
+			assertEquals(5940,finalPrice,0);
+		}
+		
 	
 
 }
