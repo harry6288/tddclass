@@ -26,6 +26,9 @@ public class SoftwareSales {
 		else if (quantity>=100) {
 			discount = subTotal * 0.50;
 		}
+		else if(quantity < 0) {
+			return -1;
+		}
 		double finalTotal = subTotal - discount;
 		return finalTotal;
 	}
