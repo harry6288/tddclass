@@ -49,6 +49,12 @@ SoftwareSales s;
 			double finalPrice = s.calculatePrice(120);
 			assertEquals(5940,finalPrice,0);
 		}
+		//r6 
+		@Test
+		public void testNegativeQuantity() {
+			double finalPrice = s.calculatePrice(-5);
+			assertEquals(-1,finalPrice,0);
+		}
 		
 	
 
