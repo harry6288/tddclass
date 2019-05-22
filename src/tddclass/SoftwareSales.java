@@ -17,6 +17,13 @@ public class SoftwareSales {
 			double finalTotal = subTotal - discount;
 			return finalTotal;	
 		}
+		else if(quantity>=50 && quantity<=99)
+		{
+			double subTotal = 99 * quantity;
+			double discount = subTotal * 0.40;
+			double finalTotal = subTotal - discount;
+			return finalTotal;	
+		}
 		return(99.0*quantity);
 	}
 

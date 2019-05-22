@@ -19,28 +19,28 @@ SoftwareSales s;
 // R1: buy one software package
 	@Test
 	public void testBuyOneSoftwarePackage() {
-		SoftwareSales s = new SoftwareSales();
+		
 		double finalPrice = s.calculatePrice(2);
 		assertEquals(198, finalPrice,0);
 	}
 	//R2
 	@Test
 	public void testBuy10Packages() {
-		SoftwareSales s = new SoftwareSales();
+		
 		double finalPrice = s.calculatePrice(12);
 		assertEquals(950.4,finalPrice,0);
 	}
 	//R3
 		@Test
 		public void testBuy20Packages() {
-			SoftwareSales s = new SoftwareSales();
+			
 			double finalPrice = s.calculatePrice(30);
 			assertEquals(2079,finalPrice,0);
 		}
 		//r4
 		@Test
 		public void testBuy50Packages() {
-			double finalPrice = s.calculatePrice(52);
+			double finalPrice = s.calculatePrice(60);
 			assertEquals(3564,finalPrice,0);
 		}
 	
